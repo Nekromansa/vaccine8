@@ -70,7 +70,7 @@ var page = {
 						<div class="fl w-100">
 
 							<div class="w-100 br2">
-								
+
 
 								<div class="monaco pv3  center black flex flex-row">
 									<div class={"w-50 fw5 bw1 pa3 br b--white pointer "+page.classBtnLogin} onclick={page.switchFormLogin}>
@@ -84,6 +84,7 @@ var page = {
 								<div class={" f6 avenir black tl cf "+page.classLogin}>
 
 									<span class="list bottom-0 z-9 fl bg-white w-100 br3 br--top  overflow-y-scroll " style="min-height:50vh">
+										<a class="link" href="/app/schedule">
 										<div class="flex items-center lh-copy pa3 bb b--near-white hover-bg-green  green hover-gold ">
 											<div class="pa1 br-100 bg-red">
 												<Icons name="bell" class="white h1 fr br1" onclickX={menu.toggle}/>
@@ -95,7 +96,9 @@ var page = {
 												<Icons name="chevron-right" class=" h1 fr br1"/>
 											</div>
 										</div>
+										</a>
 
+										<a class="link" href="/app/schedule">
 										<div class="flex items-center lh-copy pa3 bb b--near-white hover-bg-green  green hover-gold ">
 											<div class="pa1 br-100 bg-green">
 												<Icons name="bell" class="white h1 fr br1" onclickX={menu.toggle}/>
@@ -107,7 +110,7 @@ var page = {
 												<Icons name="chevron-right" class=" h1 fr br1"/>
 											</div>
 										</div>
-									  	
+										</a>
 									</span>
 								</div>
 
@@ -151,7 +154,7 @@ var page = {
 
 									</article>
 							</div>
-							
+
 					  </div>
 					</div>
 			  </div>

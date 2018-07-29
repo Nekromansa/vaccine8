@@ -25,7 +25,7 @@ var page = {
 				<article class="vh-25 dt w-100">
 					<div class="dtc v-mid tc ph2 relative">
 						<div id="particles-js" class="w-100 vh-25 absolute top-0 left-0"></div>
-						<span class="tc f4 fw6 white tracked" style=""> TRANSACTIONS </span>
+						<span class="tc f4 fw6 white tracked" style=""> Immunization Record </span>
 					</div>
 				</article>
 
