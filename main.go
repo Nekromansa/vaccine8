@@ -1,4 +1,4 @@
-package main
+package vaccine8
 
 import (
 	"flag"

@@ -5,11 +5,10 @@ import indexPage from './index.js';
 import browserPage from './browser.js';
 import accountPage from './account.js';
 import recipientPage from './recipient.js';
-<<<<<<< HEAD
+
 import createPage from './create.js';
-=======
->>>>>>> a72ae10c15f0e974f41dacb8c7acedea97cc42ed
-import transactionPage from './transaction.js';
+import schedulePage from './schedule.js';
+
 //
 
 
@@ -35,6 +34,6 @@ m.route(document.getElementById('appContent'), "/app", {
 
 	"/app/recipient":{ view: function(vnode) { return m(recipientPage);},},
 	"/app/create":{ view: function(vnode) { return m(createPage);},},
-	"/app/transaction":{ view: function(vnode) { return m(transactionPage);},},
+	"/app/schedule":{ view: function(vnode) { return m(schedulePage);},},
 
 });
