@@ -5,6 +5,7 @@ var m = require("mithril")
 import indexPage from './index.js';
 import lockPage from './lock.js';
 import importPage from './import.js';
+import onboardPage from './onboard.js';
 //
 
 m.route.setOrig = m.route.set;
@@ -22,7 +23,6 @@ m.route.link = function(vnode){
 m.route.prefix("")
 m.route.mode = "pathname"
 m.route(document.getElementById('appContent'), "/", {
-	"/":{ view: function(vnode) { return m(indexPage);},},
-	"/lock":{ view: function(vnode) { return m(lockPage);},},
-	"/import":{ view: function(vnode) { return m(importPage);},},
+	"/":{ view: function(vnode) { return m(onboardPage);},},
+	"/login":{ view: function(vnode) { return m(indexPage);},},
 });

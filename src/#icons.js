@@ -484,6 +484,11 @@ var Icons = {
           <path d="M2 0v5h-2l3.03 3 2.97-3h-2v-5h-2z" transform="translate(1)" />
         </svg>);
 
+      case "media-record":
+        return (<svg style="fill:currentcolor" {...vnode.attrs} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+          <path d="M3 0c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" transform="translate(1 1)" />
+        </svg>);
+
       case "blank":
         return (<svg style="fill:currentcolor" {...vnode.attrs} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
 
