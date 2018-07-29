@@ -49,10 +49,10 @@ var page = {
 								<div class="ph2 w-100 br2 ">
 									<article class="h5-l dt w-100">
 										<div class="dtc v-mid tc white monaco ">
-											<img class="db center h4" src="../../assets/img/icon.svg" />
-											<span class="b  i">vaccine8</span>
-											<div class="pv2 gray tc f6 f5-l tracked i fw3">
-												 The Power of Ethereum in your hand
+											<img class="db center h4" src="../../assets/img/logo.png" />
+											<span class="b f1-l i">vaccine8</span>
+											<div class="pv2 white tc f6 f5-l tracked i fw3">
+												 Medical Health Records
 											</div>
 											<div class="cf mv2"></div>
 
