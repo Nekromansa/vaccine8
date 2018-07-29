@@ -115,8 +115,108 @@ func (masterdata MasterDatas) Setup() (err error) {
 	masterdataRecord.Vaccine = "BCG"
 	masterdataRecord.Diseases = "BCG"
 	masterdataRecord.VaccineDetails = "Bacillus Calmette Guerin-Tuberculosis"
+	masterdataRecord.DiseasesDetails = "Bacillus Calmette Guerin-Tuberculosis"
+	masterdata.Create(&masterdataRecord)
+
+	masterdataRecord.Age = "10"
+	masterdataRecord.AgeUOM = "Weeks"
+	masterdataRecord.Vaccine = "OPV 2"
+	masterdataRecord.Diseases = "Polio"
+	masterdataRecord.VaccineDetails = ""
 	masterdataRecord.DiseasesDetails = ""
 	masterdata.Create(&masterdataRecord)
+
+	masterdataRecord.Age = "10"
+	masterdataRecord.AgeUOM = "Weeks"
+	masterdataRecord.Vaccine = "Pentavalent 2"
+	masterdataRecord.Diseases = "DPT,HIB,Hepatitis B"
+	masterdataRecord.VaccineDetails = ""
+	masterdataRecord.DiseasesDetails = "( Diphtheria, Pertussis or Whooping Cough, Tetanus),(Haemophilus influenzae type B)"
+	masterdata.Create(&masterdataRecord)
+
+	masterdataRecord.Age = "14"
+	masterdataRecord.AgeUOM = "Weeks"
+	masterdataRecord.Vaccine = "OPV 3"
+	masterdataRecord.Diseases = "Polio"
+	masterdataRecord.VaccineDetails = ""
+	masterdataRecord.DiseasesDetails = ""
+	masterdata.Create(&masterdataRecord)
+
+	masterdataRecord.Age = "14"
+	masterdataRecord.AgeUOM = "Weeks"
+	masterdataRecord.Vaccine = "Pentavalent 3"
+	masterdataRecord.Diseases = "DPT,HIB,Hepatitis B"
+	masterdataRecord.VaccineDetails = ""
+	masterdataRecord.DiseasesDetails = "( Diphtheria, Pertussis or Whooping Cough, Tetanus),(Haemophilus influenzae type B)"
+	masterdata.Create(&masterdataRecord)
+
+	masterdataRecord.Age = "14"
+	masterdataRecord.AgeUOM = "Weeks"
+	masterdataRecord.Vaccine = "PCV 3"
+	masterdataRecord.Diseases = "Pneumonia & Otitismedia"
+	masterdataRecord.VaccineDetails = ""
+	masterdataRecord.DiseasesDetails = ""
+	masterdata.Create(&masterdataRecord)
+
+	masterdataRecord.Age = "6"
+	masterdataRecord.AgeUOM = "Months"
+	masterdataRecord.Vaccine = "Vitamin A 1st Dose"
+	masterdataRecord.Diseases = "Vitamin A deficiency"
+	masterdataRecord.VaccineDetails = ""
+	masterdataRecord.DiseasesDetails = "VAD"
+	masterdata.Create(&masterdataRecord)
+
+	masterdataRecord.Age = "9"
+	masterdataRecord.AgeUOM = "Months"
+	masterdataRecord.Vaccine = "Measles Vaccine"
+	masterdataRecord.Diseases = "Measles "
+	masterdataRecord.VaccineDetails = ""
+	masterdataRecord.DiseasesDetails = ""
+	masterdata.Create(&masterdataRecord)
+
+	masterdataRecord.Age = "9"
+	masterdataRecord.AgeUOM = "Months"
+	masterdataRecord.Vaccine = "Yellow fever vaccine"
+	masterdataRecord.Diseases = "Yellow fever"
+	masterdataRecord.VaccineDetails = ""
+	masterdataRecord.DiseasesDetails = ""
+	masterdata.Create(&masterdataRecord)
+
+	masterdataRecord.Age = "12-24"
+	masterdataRecord.AgeUOM = "Months"
+	masterdataRecord.Vaccine = "Meningitis vaccine"
+	masterdataRecord.Diseases = "Meningitis & Septicaemia"
+	masterdataRecord.VaccineDetails = "Nimenrix"
+	masterdataRecord.DiseasesDetails = ""
+	masterdata.Create(&masterdataRecord)
+
+	masterdataRecord.Age = "15-18"
+	masterdataRecord.AgeUOM = "Months"
+	masterdataRecord.Vaccine = "MMR (Priorix)"
+	masterdataRecord.Diseases = "Measles, Mumps, Rubella"
+	masterdataRecord.VaccineDetails = ""
+	masterdataRecord.DiseasesDetails = "German "
+	masterdata.Create(&masterdataRecord)
+
+	masterdataRecord.Age = "15-18"
+	masterdataRecord.AgeUOM = "Months"
+	masterdataRecord.Vaccine = "Chicken pox vaccine"
+	masterdataRecord.Diseases = "Measles, Mumps, Rubella"
+	masterdataRecord.VaccineDetails = ""
+	masterdataRecord.DiseasesDetails = "German, Chicken pox, Varicella"
+	masterdata.Create(&masterdataRecord)
+
+	masterdataRecord.Age = "24"
+	masterdataRecord.AgeUOM = "Months"
+	masterdataRecord.Vaccine = "Typhoid Vaccine"
+	masterdataRecord.Diseases = "Typhoid fever"
+	masterdataRecord.VaccineDetails = "Typherix"
+	masterdataRecord.DiseasesDetails = ""
+	masterdata.Create(&masterdataRecord)
+
+
+
+
 
 	return nil
 }
