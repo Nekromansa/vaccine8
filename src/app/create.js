@@ -30,17 +30,17 @@ var page = {
 						<div class="mv2 cf"></div>
 
 						<span class="fl w-100 center br2 flex items-center">
-							{m("input", {class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Enter Name"})}
+							{m("input", {class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"First Name"})}
 							<Icons name="person" class="bg-orange h1 w2 pv3 ph3 ph2-ns white pointer br2 br--right"/>
 						</span>
 						<div class="cf mv2"></div>
 						<span class="fl w-100 center br2 flex items-center">
-							{m("input", {type:"email", class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Enter Email"})}
+							{m("input", {type:"email", class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Last Name"})}
 							<Icons name="envelope-closed" class="bg-orange h1 w2 pv3 ph3 ph2-ns white pointer br2 br--right"/>
 						</span>
 						<div class="cf mv2"></div>
 						<span class="fl w-100 center br2 flex items-center">
-							{m("input", {type:"password", class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Enter Password"})}
+							{m("input", {type:"password", class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Relationship"})}
 							<Icons name="lock-locked" class="bg-orange h1 w2 pv3 ph3 ph2-ns white pointer br2 br--right"/>
 						</span>
 						<div class="cf mv2"></div>
