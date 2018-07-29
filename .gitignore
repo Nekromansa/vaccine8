@@ -24,3 +24,7 @@ assets/bin/web.min.js
 app/ui/assets/bin/service-worker.js
 tasks/
 vaccine8
+
+assets/bin/app.min.js
+assets/bin/service-worker.js
+vaccine8_mac.app
