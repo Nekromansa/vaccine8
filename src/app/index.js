@@ -116,58 +116,42 @@ var page = {
 
 								<div class={" f6 avenir black tl cf "+page.classRegister}>
 									<article class="cf br3 br--top bg-white w-100">
-										  <div class="fl w-50 bb br b--near-white tc">
+										  <div class="fl w-50 h5 bb br b--near-white tc">
 										  	<div class="pa4 tc">
-										  	  <img src="http://tachyons.io/img/logo.jpg"
+										  	  <img src="assets/img/family.png"
 										  	      class="br-100 ba h3 w3 dib" alt="avatar">
 										  	   </img>
-										    	<label class="db f5 f4-l">Column One</label>
+										    	<label class="db pa4 f5 b f4-l">Protecting yourself & those around you</label>
 										  	</div>
 										  </div>
 
-										  <div class="fl w-50 bb b--near-white tc">
+										  <div class="fl w-50 h5 bb b--near-white tc">
 										  	<div class="pa4 tc">
-										  	  <img src="http://tachyons.io/img/logo.jpg"
+										  	  <img src="assets/img/map-location.png"
 										  	      class="br-100 ba h3 w3 dib" alt="avatar">
 										  	   </img>
-										    	<label class="db f5 f4-l">Column Two</label>
-										  	</div>
-										  </div>
-										  <div class="fl w-50 bb br b--near-white tc">
-										  	<div class="pa4 tc">
-										  	  <img src="http://tachyons.io/img/logo.jpg"
-										  	      class="br-100 ba h3 w3 dib" alt="avatar">
-										  	   </img>
-										    	<label class="db f5 f4-l">Column Three</label>
+										    	<label class="db pa4 f5 b f4-l">Outbreaks Map</label>
 										  	</div>
 										  </div>
 
-										  <div class="fl w-50 bb b--near-white tc">
+										  <div class="fl w-50 h5 bb br b--near-white tc">
 										  	<div class="pa4 tc">
-										  	  <img src="http://tachyons.io/img/logo.jpg"
+										  	  <img src="assets/img/sheet.svg"
 										  	      class="br-100 ba h3 w3 dib" alt="avatar">
 										  	   </img>
-										    	<label class="db f5 f4-l">Column Four</label>
+										    	<label class="db pa4 f5 b f4-l">Vaccine Fact Sheets</label>
 										  	</div>
 										  </div>
 
-										  <div class="fl w-50 bb br b--near-white tc">
+										  <div class="fl w-50 h5 bb b--near-white tc">
 										  	<div class="pa4 tc">
-										  	  <img src="http://tachyons.io/img/logo.jpg"
+										  	  <img src="assets/img/calendar.svg"
 										  	      class="br-100 ba h3 w3 dib" alt="avatar">
 										  	   </img>
-										    	<label class="db f5 f4-l">Column Five</label>
+										    	<label class="db pa4 f5 b f4-l">Provincial Vaccination Schedules</label>
 										  	</div>
 										  </div>
 
-										  <div class="fl w-50 bb b--near-white tc">
-										  	<div class="pa4 tc">
-										  	  <img src="http://tachyons.io/img/logo.jpg"
-										  	      class="br-100 ba h3 w3 dib" alt="avatar">
-										  	   </img>
-										    	<label class="db f5 f4-l">Column Six</label>
-										  	</div>
-										  </div>
 									</article>
 							</div>
 
