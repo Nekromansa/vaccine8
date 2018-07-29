@@ -74,47 +74,53 @@ var page = {
 									</div>
 
 									<div class={"ph3 f6 avenir black tl cf pt4 pb2 "+page.classLogin}>
+										
+										<span class="fl w-100 center br2 flex items-center">
+											{m("input", {type:"email", class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Enter Email"})}
+											<Icons name="envelope-closed" class="bg-gold h1 w2 pv3 ph3 ph2-ns white pointer br2 br--right"/>
+										</span>
+										<div class="cf mv2"></div>
 										<span class="fl w-100 center br2 flex items-center">
 											{m("input", {class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Enter Password"})}
 											<Icons name="chevron-right" class="bg-gold h1 w2 pv3 ph3 ph2-ns white pointer br2 br--right"/>
 										</span>
+										<div class="cf mv3"></div>
+										<div class=" tc">
+											<a class="link bg-gold ttu b tracked near-white shadow-4 pointer fl w-100 dim pv3 br2" href="/app">Log In</a>
+										</div>
 									</div>
 
 									<div class={"ph3 f6 avenir black tl cf pt4 pb2 "+page.classRegister}>
 										<span class="fl w-100 center br2 flex items-center">
-											{m("input", {class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Enter Password"})}
+											{m("input", {class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Enter Name"})}
+											<Icons name="person" class="bg-orange h1 w2 pv3 ph3 ph2-ns white pointer br2 br--right"/>
+										</span>
+										<div class="cf mv2"></div>
+										<span class="fl w-100 center br2 flex items-center">
+											{m("input", {type:"email", class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Enter Email"})}
+											<Icons name="envelope-closed" class="bg-orange h1 w2 pv3 ph3 ph2-ns white pointer br2 br--right"/>
+										</span>
+										<div class="cf mv2"></div>
+										<span class="fl w-100 center br2 flex items-center">
+											{m("input", {type:"password", class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Enter Password"})}
 											<Icons name="lock-locked" class="bg-orange h1 w2 pv3 ph3 ph2-ns white pointer br2 br--right"/>
 										</span>
 										<div class="cf mv2"></div>
 										<span class="fl w-100 center br2 flex items-center">
-											{m("input", {class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Confirm Password"})}
+											{m("input", {type:"password", class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Confirm Password"})}
 											<Icons name="lock-locked" class="bg-orange h1 w2 pv3 ph3 ph2-ns white pointer br2 br--right"/>
 										</span>
 										<div class="cf mv3"></div>
 										<div class=" tc">
-											<span class="bg-gold ttu b tracked near-white shadow-4 pointer fl w-100 dim pv3 br2" onclick={page.Submit}>Create Your Wallet </span>
+											<a class="link bg-gold ttu b tracked near-white shadow-4 pointer fl w-100 dim pv3 br2" href="/app">Sign Up</a>
 										</div>
 									</div>
 								</div>
-								<div class="ph3 w-100 br2">
-									<div class="f6 avenir white tl cf">
-										<a href="/import" oncreate={m.route.link} class="yellow no-underline ph1 br1">
-											<span class="fw5 db">Restore account?</span>
-											<span class="fw5 db gold">Import using account seed phrase</span>
-										</a>
-									</div>
-								</div>
+								
 						  </div>
 
 
-							<div class="fl w-100 ph3">
-								<p class="f5 tl center tracked ">
-									vaccine8 is a mobile dapp browser and wallet for the Ethereum blockchain
-								</p>
-								<p class="f5 tl center tracked dn">
-									vaccine8 allows you to interact with dapps powered by Ethereum on your mobile device and makes it easy for you to securely store, send and receive Ether and ERC20 tokens.
-								</p>
-							</div>
+							
 						</div>
 				  </div>
 				</article>

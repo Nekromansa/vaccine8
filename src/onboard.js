@@ -12,8 +12,8 @@ var page = { sliderContainer:[],
 			<article class="min-vh-100 dt w-100" style="">
 				<div class="dtc v-mid tc black ph2 relative">
 
-				<a href="/login" class="link absolute right-0 top-0 pa3 tracked f6 b tc purple">
-					GET STARTED
+				<a href="/login" class="link absolute right-0 top-0 pa3 tracked f6 b tc hot-pink">
+					LOGIN/REGISTER
 				</a>
 
 				<div class="measure center tc relative">
@@ -48,46 +48,54 @@ var page = { sliderContainer:[],
 	sliderInit: function(vnode){
 		var searchList = [];
 		searchList.push(m(page.sliderItem,{
-			slide1Status:"purple",slide2Status:"near-white", slide3Status:"near-white",
-			slide4Status:"near-white", slide5Status:"near-white", slide6Status:"near-white",
-			slideIcon: "logo.png", slideTitle:"ONE SLIDE",
-			slideDetails:"Join the community in identifying, mapping, collecting and recycling litter.",
+			slide1Status:"purple",slide2Status:"pink", slide3Status:"pink",
+			slide4Status:"pink", slide5Status:"pink", slide6Status:"pink",
+			slideIcon: "Family.svg", slideTitle:"Track your family immunization record.",
+			slideDetails:""
 		}));
 
 		searchList.push(m(page.sliderItem,{
-			slide1Status:"near-white",slide2Status:"purple", slide3Status:"near-white",
-			slide4Status:"near-white", slide5Status:"near-white", slide6Status:"near-white",
-			slideIcon: "logo.png", slideTitle:"TWO SLIDE",
-			slideDetails:"Join the community in identifying, mapping, collecting and recycling litter.",
+			slide1Status:"pink",slide2Status:"purple", slide3Status:"pink",
+			slide4Status:"pink", slide5Status:"pink", slide6Status:"pink",
+			slideIcon: "Community.svg", slideTitle:"Track rural community immunization record",
+			slideDetails:""
 		}));
 
 		searchList.push(m(page.sliderItem,{
-			slide1Status:"near-white",slide2Status:"near-white", slide3Status:"purple",
-			slide4Status:"near-white", slide5Status:"near-white", slide6Status:"near-white",
-			slideIcon: "logo.png", slideTitle:"THREE SLIDE",
-			slideDetails:"Earn Tokens redeemable to cash as you recycle",
+			slide1Status:"pink",slide2Status:"pink", slide3Status:"purple",
+			slide4Status:"pink", slide5Status:"pink", slide6Status:"pink",
+			slideIcon: "Access.svg", slideTitle:"Access records from anywhere and on any device",
+			slideDetails:""
 		}));
 
 		searchList.push(m(page.sliderItem,{
-			slide1Status:"near-white",slide2Status:"near-white", slide3Status:"near-white",
-			slide4Status:"purple", slide5Status:"near-white", slide6Status:"near-white",
-			slideIcon: "logo.png", slideTitle:"4TH SLIDE",
-			slideDetails:"Earn Tokens redeemable to cash as you recycle",
+			slide1Status:"pink",slide2Status:"pink", slide3Status:"pink",
+			slide4Status:"purple", slide5Status:"pink", slide6Status:"pink",
+			slideIcon: "Reminders.svg", slideTitle:"Recieve notifications when immunization is due",
+			slideDetails:""
 		}));
 
 		searchList.push(m(page.sliderItem,{
-			slide1Status:"near-white",slide2Status:"near-white", slide3Status:"near-white",
-			slide4Status:"near-white", slide5Status:"purple", slide6Status:"near-white",
-			slideIcon: "logo.png", slideTitle:"5TH SLIDE",
-			slideDetails:"Earn Tokens redeemable to cash as you recycle",
+			slide1Status:"pink",slide2Status:"pink", slide3Status:"pink",
+			slide4Status:"pink", slide5Status:"purple", slide6Status:"pink",
+			slideIcon: "Doctor.svg", slideTitle:"Get informations about immunization in your territory",
+			slideDetails:""
 		}));
 
 		searchList.push(m(page.sliderItem,{
-			slide1Status:"near-white",slide2Status:"near-white", slide3Status:"near-white",
-			slide4Status:"near-white", slide5Status:"near-white", slide6Status:"purple",
-			slideIcon: "logo.png", slideTitle:"6TH SLIDE",
-			slideDetails:"Earn Tokens redeemable to cash as you recycle",
+			slide1Status:"pink",slide2Status:"pink", slide3Status:"pink",
+			slide4Status:"pink", slide5Status:"pink", slide6Status:"purple",
+			slideIcon: "notification.svg", slideTitle:"Be notified about disease outbreaks in your area",
+			slideDetails:""
 		}));
+
+		searchList.push(m(page.sliderItem,{
+			slide1Status:"pink",slide2Status:"pink", slide3Status:"pink",
+			slide4Status:"pink", slide5Status:"pink", slide6Status:"purple",
+			slideIcon: "Travel.svg", slideTitle:"Update travel vaccines before each trip",
+			slideDetails:""
+		}));
+
 
 
 		if(searchList.length > 0) {
@@ -103,8 +111,8 @@ var page = { sliderContainer:[],
 	view:function(vnode){
 		return (
 			<section style="" class="min-vh-100 bg-white  center w-100 ">
-			<div class="flex flex-column flex-row-m">
-				<div class="w-100 center relative">
+				<div class="flex flex-column flex-row-m">
+					<div class="w-100 center relative">
 						<div class="siema w-100">
 							{page.sliderContainer}
 						</div>

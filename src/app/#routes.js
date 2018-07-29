@@ -5,7 +5,7 @@ import indexPage from './index.js';
 import browserPage from './browser.js';
 import accountPage from './account.js';
 import recipientPage from './recipient.js';
-import walletPage from './wallet.js';
+import createPage from './create.js';
 import transactionPage from './transaction.js';
 //
 
@@ -31,7 +31,7 @@ m.route(document.getElementById('appContent'), "/app", {
 	"/app/account":{ view: function(vnode) { return m(accountPage);},},
 
 	"/app/recipient":{ view: function(vnode) { return m(recipientPage);},},
-	"/app/wallet":{ view: function(vnode) { return m(walletPage);},},
+	"/app/create":{ view: function(vnode) { return m(createPage);},},
 	"/app/transaction":{ view: function(vnode) { return m(transactionPage);},},
 
 });

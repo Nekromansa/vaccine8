@@ -3,8 +3,6 @@ var m = require("mithril")
 
 //App Home Pages
 import indexPage from './index.js';
-import lockPage from './lock.js';
-import importPage from './import.js';
 import onboardPage from './onboard.js';
 //
 

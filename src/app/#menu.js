@@ -6,14 +6,14 @@ import Icons from '../#icons.js';
 // }
 
 export var menu = {
-	menuFixed: "bg-transparent",
+	menuFixed: "bg-body",
 	oninit: function() {
 		window.addEventListener('scroll', function() {
 			var menuFixed;
 			var shrinkOn = 160;
 			var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-			if (distanceY > shrinkOn) { menuFixed = "top-nav fadeIn fixed"; }
-			else { menuFixed = "bg-transparent"; }
+			if (distanceY > shrinkOn) { menuFixed = "bg-body fadeIn fixed"; }
+			else { menuFixed = "bg-body"; }
 
 			if (menuFixed !== menu.menuFixed) {
 				menu.menuFixed = menuFixed;
@@ -26,9 +26,7 @@ export var menu = {
 			return(
 				<a class="link" href={vnode.attrs.href}>
 					<li class="tr" onclick={menu.toggle}>
-						<p class="ph2 pv3 mv0 white hover-bg-white hover-blue fw5 tracked">
-							{vnode.children}
-						</p>
+						<p class="ph2 pv3 mv0 white hover-bg-white hover-blue fw5 tracked">{vnode.children}</p>
 					</li>
 				</a>
 			)
@@ -102,11 +100,17 @@ export var menu = {
 					</ul>
 				</div>
 
-				<nav id="nav" class="w-100 mw8 pa3 fixed z-9999">
-					<Icons name="menu" class=" gray h1 fr pa2 bg-yellow br1" onclick={menu.toggle}/>
+				<nav id="nav" class=" mw8 center w-80-l w-100 pv2	 z-9999 tc">
+					<div class=" w-80-l w-100 center">
+						<div class="flex items-center">
+							<span class="center flex items-center b tracked">
+								<img class="center h2 pb2" src="../../assets/img/logo.png" /> 
+								VACCINE8
+							</span>
+							<Icons name="bell" class="white h1 fr pa2 br1" onclickX={menu.toggle}/>
+						</div>
+					</div>
 				</nav>
-
-
 
 
 				<div id="appAlert"></div>

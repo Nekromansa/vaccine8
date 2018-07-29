@@ -34,7 +34,7 @@
 		<section id="appLoading" style="" class="min-vh-100 w-100 absolute dn z-max bg-body">
 			<article class="dt center">
 				<div class="dtc v-mid tc f6 fw3 vh-75 near-white">
-					<img class="h3" src="../assets/img/icon.svg"/> <br/>
+					<img class="h3" src="../assets/img/logo.png"/> <br/>
 					<div class="spinner">
 						<div class="dot1"></div>
 						<div class="dot2"></div>
@@ -51,7 +51,7 @@
 			<section id="Index" style="" class="min-vh-100 w-100 absolute bg-body">
 				<article class="dt center">
 					<div class="dtc v-mid tc f6 fw3 vh-75 near-white">
-						<img class="h3" src="../assets/img/icon.svg"/> <br/>
+						<img class="h3" src="../assets/img/logo.png"/> <br/>
 						<div class="spinner center">
 							<div class="dot1"></div>
 							<div class="dot2"></div>
