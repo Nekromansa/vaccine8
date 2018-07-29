@@ -5,7 +5,6 @@ import indexPage from './index.js';
 import browserPage from './browser.js';
 import accountPage from './account.js';
 import recipientPage from './recipient.js';
-import walletPage from './wallet.js';
 import transactionPage from './transaction.js';
 //
 
