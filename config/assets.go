@@ -13,7 +13,14 @@ func Asset(filename string) (assetByte []byte, assetError error) {
 	} else {
 		switch Get().OS {
 		case "ios", "android":
-			assetByte, assetError = ioutil.ReadFile(Get().Path + filename)
+			path := ""
+			switch {
+				case
+				strings.HasPrefix(filename,"/files/"),
+				strings.HasPrefix(filename,"/images/"):
+				path = Get().Path
+			}
+			assetByte, assetError = ioutil.ReadFile( path + filename)
 		default:
 			assetByte, assetError = ioutil.ReadFile(Get().Path + filename)
 		}

@@ -70,9 +70,9 @@ var page = {
 						</span>
 						<div class="cf mv3"></div>
 						<div class=" tc">
-							<a class="link bg-gold ttu b tracked near-white shadow-4 pointer fl w-100 dim pv3 br2" href="/app">Sign Up</a>
+							<a class="link bg-gold ttu b tracked near-white shadow-4 pointer fl w-100 dim pv3 br2" href="/app/">Sign Up</a>
 						</div>
-					
+
 					</div>
 				  </div>
 				</article>

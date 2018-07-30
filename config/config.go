@@ -66,15 +66,15 @@ func Init(yamlConfig []byte) {
 	config.Version = viper.GetString("version")
 	config.Timezone = viper.GetString("timezone")
 
-	encrptionKeysMap := viper.GetStringMapString("encryption_keys")
-	if encrptionKeysMap != nil {
-		config.Encryption.Public, err = Asset(encrptionKeysMap["public"])
+	encryptionKeysMap := viper.GetStringMapString("encryption_keys")
+	if encryptionKeysMap != nil {
+		config.Encryption.Public, err = Asset(encryptionKeysMap["public"])
 		if err != nil {
 			log.Fatalf("Error reading public key %v", err)
 			return
 		}
 
-		config.Encryption.Private, err = Asset(encrptionKeysMap["private"])
+		config.Encryption.Private, err = Asset(encryptionKeysMap["private"])
 		if err != nil {
 			log.Fatalf("Error reading private key %v", err)
 			return

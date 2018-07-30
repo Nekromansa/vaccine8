@@ -74,7 +74,7 @@ var page = {
 									</div>
 
 									<div class={"ph3 f6 avenir black tl cf pt4 pb2 "+page.classLogin}>
-										
+
 										<span class="fl w-100 center br2 flex items-center">
 											{m("input", {type:"email", class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Enter Email"})}
 											<Icons name="envelope-closed" class="bg-gold h1 w2 pv3 ph3 ph2-ns white pointer br2 br--right"/>
@@ -86,7 +86,7 @@ var page = {
 										</span>
 										<div class="cf mv3"></div>
 										<div class=" tc">
-											<a class="link bg-gold ttu b tracked near-white shadow-4 pointer fl w-100 dim pv3 br2" href="/app">Log In</a>
+											<a class="link bg-gold ttu b tracked near-white shadow-4 pointer fl w-100 dim pv3 br2" href="/app/">Log In</a>
 										</div>
 									</div>
 
@@ -112,15 +112,15 @@ var page = {
 										</span>
 										<div class="cf mv3"></div>
 										<div class=" tc">
-											<a class="link bg-gold ttu b tracked near-white shadow-4 pointer fl w-100 dim pv3 br2" href="/app">Sign Up</a>
+											<a class="link bg-gold ttu b tracked near-white shadow-4 pointer fl w-100 dim pv3 br2" href="/app/">Sign Up</a>
 										</div>
 									</div>
 								</div>
-								
+
 						  </div>
 
 
-							
+
 						</div>
 				  </div>
 				</article>
