@@ -1,5 +1,5 @@
-// package VACCINE
-package main
+// package main
+package VACCINE
 
 import (
 	"flag"

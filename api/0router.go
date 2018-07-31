@@ -98,10 +98,10 @@ func fileServe(httpRes http.ResponseWriter, httpReq *http.Request) {
 
 	var defaultURL string
 	switch {
-	case strings.HasPrefix(httpReq.URL.String(), "/app/"):
+	case strings.HasPrefix(urlPath, "/app/"):
 		defaultURL = "app"
 		break
-	case strings.HasPrefix(httpReq.URL.String(), "/dashboard/"):
+	case strings.HasPrefix(urlPath, "/dashboard/"):
 		defaultURL = "dashboard"
 		break
 	default:

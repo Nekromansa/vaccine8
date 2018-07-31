@@ -2,7 +2,7 @@ timezone: Africa/Lagos
 version: v1.0.0.0.0
 cookie: vaccine8V1
 db: bolt.db
-os: mac
+os:
 path:
 address: :4444
 encryption_keys:

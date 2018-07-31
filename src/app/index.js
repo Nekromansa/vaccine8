@@ -45,7 +45,9 @@ var page = {
 	},
 	oninit:function(vnode){
 		setTimeout(function(){page.sliderInit()},250);
-		m.mount(document.getElementById('appMenu'), menu)
+		m.mount(document.getElementById('appMenu'), { view: function() {
+			return m(menu, {iconClass:"",iconName:"logout",iconHref:"/login"})
+		}})
 	},
 	oncreate:function(vnode){
 		particlesJS.load('particles-js', '../../assets/bin/particles.json', function() {
@@ -84,7 +86,7 @@ var page = {
 								<div class={" f6 avenir black tl cf "+page.classLogin}>
 
 									<span class="list bottom-0 z-9 fl bg-white w-100 br3 br--top  overflow-y-scroll " style="min-height:50vh">
-										<a class="link" href="/app/schedule">
+										<a oncreate={m.route.link} class="link" href="/app/schedule">
 										<div class="flex items-center lh-copy pa3 bb b--near-white hover-bg-green  green hover-gold ">
 											<div class="pa1 br-100 bg-red">
 												<Icons name="bell" class="white h1 fr br1" onclickX={menu.toggle}/>
@@ -98,7 +100,7 @@ var page = {
 										</div>
 										</a>
 
-										<a class="link" href="/app/schedule">
+										<a oncreate={m.route.link} class="link" href="/app/schedule">
 										<div class="flex items-center lh-copy pa3 bb b--near-white hover-bg-green  green hover-gold ">
 											<div class="pa1 br-100 bg-green">
 												<Icons name="bell" class="white h1 fr br1" onclickX={menu.toggle}/>
