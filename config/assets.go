@@ -4,6 +4,9 @@ import (
 	"fmt"
 	"io/ioutil"
 	"strings"
+
+	// "log"
+	"golang.org/x/mobile/asset"
 )
 
 //Asset ...
@@ -11,9 +14,20 @@ func Asset(filename string) (assetByte []byte, assetError error) {
 	if strings.HasSuffix(filename, "/") {
 		assetError = fmt.Errorf("directory listing forbidden")
 	} else {
+
 		switch Get().OS {
 		case "ios", "android":
-			assetByte, assetError = ioutil.ReadFile(Get().Path + filename)
+			switch {
+				case
+				strings.HasPrefix(filename,"/files/"),
+				strings.HasPrefix(filename,"/images/"):
+				assetByte, assetError = ioutil.ReadFile( Get().Path + filename)
+			default:
+				if f, errOpen := asset.Open(filename); errOpen == nil {
+					defer f.Close()
+					assetByte, assetError = ioutil.ReadAll(f)
+				}
+			}
 		default:
 			assetByte, assetError = ioutil.ReadFile(Get().Path + filename)
 		}

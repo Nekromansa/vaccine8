@@ -28,7 +28,7 @@ var page = {
 	},
 
 	sliderItem: { view: function(vnode) {
-	return(m("div",{class:"w-100 vh-75 vh-50 parallaxBG", style:"background-image:url('../../assets/img/"+vnode.attrs.filepath+"');"},))
+	return(m("div",{class:"w-100 vh-75 vh-50 parallaxBG", style:"background-image:url('../../../assets/img/"+vnode.attrs.filepath+"');"},))
 	}},
 	sliderInit: function(vnode){
 		var searchList = [];
@@ -45,10 +45,12 @@ var page = {
 	},
 	oninit:function(vnode){
 		setTimeout(function(){page.sliderInit()},250);
-		m.mount(document.getElementById('appMenu'), menu)
+		m.mount(document.getElementById('appMenu'), { view: function() {
+			return m(menu, {iconClass:"",iconName:"logout",iconHref:"/login"})
+		}})
 	},
 	oncreate:function(vnode){
-		particlesJS.load('particles-js', '../assets/bin/particles.json', function() {
+		particlesJS.load('particles-js', '../../assets/bin/particles.json', function() {
 	 		console.log('callback - particles.js config loaded');
 	 	});
 	},
@@ -84,7 +86,7 @@ var page = {
 								<div class={" f6 avenir black tl cf "+page.classLogin}>
 
 									<span class="list bottom-0 z-9 fl bg-white w-100 br3 br--top  overflow-y-scroll " style="min-height:50vh">
-										<a class="link" href="/app/schedule">
+										<a oncreate={m.route.link} class="link" href="/app/schedule">
 										<div class="flex items-center lh-copy pa3 bb b--near-white hover-bg-green  green hover-gold ">
 											<div class="pa1 br-100 bg-red">
 												<Icons name="bell" class="white h1 fr br1" onclickX={menu.toggle}/>
@@ -98,7 +100,7 @@ var page = {
 										</div>
 										</a>
 
-										<a class="link" href="/app/schedule">
+										<a oncreate={m.route.link} class="link" href="/app/schedule">
 										<div class="flex items-center lh-copy pa3 bb b--near-white hover-bg-green  green hover-gold ">
 											<div class="pa1 br-100 bg-green">
 												<Icons name="bell" class="white h1 fr br1" onclickX={menu.toggle}/>
@@ -111,6 +113,7 @@ var page = {
 											</div>
 										</div>
 										</a>
+
 									</span>
 								</div>
 
@@ -118,7 +121,7 @@ var page = {
 									<article class="cf br3 br--top bg-white w-100">
 										  <div class="fl w-50 h5 bb br b--near-white tc">
 										  	<div class="pa4 tc">
-										  	  <img src="assets/img/family.png"
+										  	  <img src="../assets/img/family.png"
 										  	      class="br-100 ba h3 w3 dib" alt="avatar">
 										  	   </img>
 										    	<label class="db pa4 f5 b f4-l">Protecting yourself & those around you</label>
@@ -127,7 +130,7 @@ var page = {
 
 										  <div class="fl w-50 h5 bb b--near-white tc">
 										  	<div class="pa4 tc">
-										  	  <img src="assets/img/map-location.png"
+										  	  <img src="../assets/img/map-location.png"
 										  	      class="br-100 ba h3 w3 dib" alt="avatar">
 										  	   </img>
 										    	<label class="db pa4 f5 b f4-l">Outbreaks Map</label>
@@ -136,7 +139,7 @@ var page = {
 
 										  <div class="fl w-50 h5 bb br b--near-white tc">
 										  	<div class="pa4 tc">
-										  	  <img src="assets/img/sheet.svg"
+										  	  <img src="../assets/img/sheet.svg"
 										  	      class="br-100 ba h3 w3 dib" alt="avatar">
 										  	   </img>
 										    	<label class="db pa4 f5 b f4-l">Vaccine Fact Sheets</label>
@@ -145,7 +148,7 @@ var page = {
 
 										  <div class="fl w-50 h5 bb b--near-white tc">
 										  	<div class="pa4 tc">
-										  	  <img src="assets/img/calendar.svg"
+										  	  <img src="../assets/img/calendar.svg"
 										  	      class="br-100 ba h3 w3 dib" alt="avatar">
 										  	   </img>
 										    	<label class="db pa4 f5 b f4-l">Provincial Vaccination Schedules</label>
@@ -161,7 +164,7 @@ var page = {
 			  </div>
 			</article>
 
-			<a class={"link "+page.classLogin} href="/app/create">
+			<a oncreate={m.route.link} class={"link "+page.classLogin} href="/app/create">
 				<div class="pa3 br-100 bg-green fixed bottom-2 right-2">
 					<Icons name="medical-cross" class="white h1 fr br1" />
 				</div>

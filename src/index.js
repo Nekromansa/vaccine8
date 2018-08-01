@@ -74,7 +74,7 @@ var page = {
 									</div>
 
 									<div class={"ph3 f6 avenir black tl cf pt4 pb2 "+page.classLogin}>
-										
+
 										<span class="fl w-100 center br2 flex items-center">
 											{m("input", {type:"email", class:"f6 tracked bn black pa3 br2 br--left w-100", placeholder:"Enter Email"})}
 											<Icons name="envelope-closed" class="bg-gold h1 w2 pv3 ph3 ph2-ns white pointer br2 br--right"/>
@@ -116,11 +116,11 @@ var page = {
 										</div>
 									</div>
 								</div>
-								
+
 						  </div>
 
 
-							
+
 						</div>
 				  </div>
 				</article>

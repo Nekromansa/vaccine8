@@ -1,4 +1,5 @@
-package vaccine8
+// package main
+package VACCINE
 
 import (
 	"flag"
@@ -34,8 +35,8 @@ os: %v
 path: %v
 address: %v
 encryption_keys:
-  public: /public.pem
-  private: /private.pem
+  public: public.pem
+  private: private.pem
 `, TIMEZONE, VERSION, COOKIE, DBPATH, OS, OSPATH, ADDRESS))
 
 	utils.Logger(OSPATH)

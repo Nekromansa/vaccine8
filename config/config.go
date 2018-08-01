@@ -55,6 +55,7 @@ func Init(yamlConfig []byte) {
 	config.OS = viper.GetString("os")
 	config.Path = viper.GetString("path")
 
+
 	if config.BoltHold, err = bolthold.Open(
 		config.DB, 0666, nil); err != nil {
 		log.Fatalf(err.Error())
@@ -66,18 +67,19 @@ func Init(yamlConfig []byte) {
 	config.Version = viper.GetString("version")
 	config.Timezone = viper.GetString("timezone")
 
-	encrptionKeysMap := viper.GetStringMapString("encryption_keys")
-	if encrptionKeysMap != nil {
-		config.Encryption.Public, err = Asset(encrptionKeysMap["public"])
-		if err != nil {
-			log.Fatalf("Error reading public key %v", err)
-			return
-		}
-
-		config.Encryption.Private, err = Asset(encrptionKeysMap["private"])
-		if err != nil {
-			log.Fatalf("Error reading private key %v", err)
-			return
-		}
-	}
+	encryptionKeysMap := viper.GetStringMapString("encryption_keys")
+	log.Printf("encryptionKeysMap: %+v", encryptionKeysMap)
+	// if encryptionKeysMap != nil {
+	// 	config.Encryption.Public, err = Asset(encryptionKeysMap["public"])
+	// 	if err != nil {
+	// 		log.Fatalf("Error reading public key %v", err)
+	// 		return
+	// 	}
+	//
+	// 	config.Encryption.Private, err = Asset(encryptionKeysMap["private"])
+	// 	if err != nil {
+	// 		log.Fatalf("Error reading private key %v", err)
+	// 		return
+	// 	}
+	// }
 }

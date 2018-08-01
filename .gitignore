@@ -28,3 +28,5 @@ vaccine8
 assets/bin/app.min.js
 assets/bin/service-worker.js
 vaccine8_mac.app
+VACCINE-sources.jar
+VACCINE.aar

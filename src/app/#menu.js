@@ -6,8 +6,9 @@ import Icons from '../#icons.js';
 // }
 
 export var menu = {
-	menuFixed: "bg-body",
-	oninit: function() {
+	menuFixed: "bg-body", iconClass:"dn",
+	oninit: function(vnode) {
+		menu.iconClass = vnode.attrs.iconClass;
 		window.addEventListener('scroll', function() {
 			var menuFixed;
 			var shrinkOn = 160;
@@ -100,11 +101,14 @@ export var menu = {
 					</ul>
 				</div>
 
-				<nav id="nav" class=" mw8 center w-80-l w-100 pv2	 z-9999 tc">
+				<nav id="nav" class="fixed mw8 center w-80-l w-100 pv2	 z-9999 tc">
 					<div class=" w-80-l w-100 center">
 						<div class="flex items-center">
+							<a oncreate={m.route.link} class="link" href={vnode.attrs.iconHref}>
+								<Icons name={vnode.attrs.iconName} class={"white h1 fr pa2 br1 "+menu.iconClass} />
+							</a>
 							<span class="center flex items-center b tracked">
-								<img class="center h2 pb2" src="../../assets/img/logo.png" /> 
+								<img class="center h2 pb2" src="../../assets/img/logo.png" />
 								VACCINE8
 							</span>
 							<Icons name="bell" class="white h1 fr pa2 br1" onclickX={menu.toggle}/>

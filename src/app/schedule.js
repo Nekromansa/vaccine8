@@ -10,9 +10,11 @@ import {checkRedirect} from '../#utils.js';
 
 
 var page = {
-
 	oninit:function(vnode){
-		m.mount(document.getElementById('appMenu'), menu)
+		var menuCustom = { view: function() {
+			return m(menu, {iconClass:"",iconName:"home",iconHref:"/app/"})
+		}}
+		m.mount(document.getElementById('appMenu'), menuCustom)
 	},
 	oncreate:function(vnode){
 		particlesJS.load('particles-js', '../assets/bin/particles.json', function() {
@@ -21,7 +23,7 @@ var page = {
 	},
 	view:function(vnode){
 		return (
-			<section style="" class=" mw8 center">
+			<section style="" class=" mw8 center w-100">
 				<article class="vh-25 dt w-100">
 					<div class="dtc v-mid tc ph2 relative">
 						<div id="particles-js" class="w-100 vh-25 absolute top-0 left-0"></div>
@@ -29,7 +31,7 @@ var page = {
 					</div>
 				</article>
 
-				<span class="list bottom-0 z-9 fl bg-white w-100 br3 br--top  overflow-y-scroll vh-75">
+				<article class=" z-9 bg-white w-80-l center br3 br--top  overflow-y-scroll vh-75">
 					<div class="flex items-center lh-copy pa2 bb b--near-white hover-bg-yellow">
 							<div class="pl3 flex-auto">
 								<span class="f6 db black-70">Diseases: Polio</span>
@@ -83,7 +85,8 @@ var page = {
 							<div class="tr">
 								<span class="f7 i link dark-green"><b>25 May 2040</b></span>
 							</div>
-					</div><div class="flex items-center lh-copy pa2 bb b--near-white hover-bg-yellow">
+					</div>
+					<div class="flex items-center lh-copy pa2 bb b--near-white hover-bg-yellow">
 							<div class="pl3 flex-auto">
 								<span class="f6 db black-70">Diseases: Polio</span>
 								<span class="f6 db black-70 truncate"><b>Vaccine: OPV</b></span>
@@ -110,7 +113,7 @@ var page = {
 								<span class="f7 i link dark-green"><b>25 May 2040</b></span>
 							</div>
 					</div>
-				</span>
+				</article>
 			</section>
 		)
 	}
